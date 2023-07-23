@@ -1,5 +1,5 @@
 const { formDummyData } = require('./dummyDataCreator');
-const { insertRecord } = require('./WriteData');
+const { insertRecord } = require('./writeData');
 const { connectToDatabase, closeConnectionToDatabase, dbClient } = require('./db');
 
 const numberOfDocuments = 1000000;
