@@ -2,7 +2,6 @@ const { MongoClient } = require('mongodb');
 
 const uri = process.env.MONGODB_URL || "mongodb://127.0.0.1:27017/mongoparallel?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
-let appDb = null;
 
 const connectToDatabase = async () => {
   try {
