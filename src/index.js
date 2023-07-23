@@ -2,10 +2,10 @@ const { formDummyData } = require('./dummyDataCreator');
 const { insertRecord } = require('./WriteData');
 const { connectToDatabase, closeConnectionToDatabase, dbClient } = require('./db');
 
-const numberOfDocuments = 10000000;
+const numberOfDocuments = 1000000;
 
 ( async () => {
-  const chunkSize = 100000;
+  const chunkSize = 1000;
   const arrayOfCollections = [];
   await connectToDatabase();
   const dummyData = formDummyData(numberOfDocuments);
